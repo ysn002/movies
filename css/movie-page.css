@@ -1,0 +1,169 @@
+.baner-movie {
+  width: 100%;
+  height: 600px;
+  margin: 50px 0;
+  position: relative;
+}
+.baner-movie .baner-img {
+  width: 100%;
+  height: 100%;
+}
+.baner-movie .baner-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(27, 27, 27, 0.6);
+  z-index: 3;
+}
+.baner-movie .baner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+}
+.baner-movie .baner-text {
+  width: 600px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 80px;
+  z-index: 4;
+}
+.baner-text .baner-text-top {
+  /* margin-top: 50px; */
+  color: #fff;
+}
+.baner-text-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+.baner-text-content p:not(:nth-child(1)) {
+  font-weight: 100;
+  font-size: 15px;
+}
+.baner-text-content .quality {
+  margin-right: 10px;
+  padding: 0px 5px;
+  background-color: red;
+  border-radius: 3px;
+  color: #000;
+  font-weight: 600;
+}
+.baner-text-content .rating {
+  margin-left: 10px;
+  margin-bottom: 17px;
+  margin-right: 10px;
+}
+.baner-text-content .mins {
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 400;
+}
+.baner-text-bottom {
+  margin-bottom: 15%;
+}
+.baner-text-bottom .baner-bottom .btn-watch a {
+  text-decoration: none;
+  color: #fff;
+}
+.baner-text-bottom .baner-bottom .btn-watch {
+  background-color: transparent;
+  padding: 10px 35px;
+  color: #fff;
+  border: 1px solid #ffffffa4;
+  transition: all 2s;
+  text-transform: uppercase;
+}
+.baner-text-bottom .baner-bottom .btn-watch:hover {
+  background-color: rgba(255, 0, 0, 0.26);
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+/*= Video ======================================================================*/
+.play-title {
+  padding: 20px 0;
+  font-size: 33px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 1px solid #878383;
+}
+.play {
+  width: 100%;
+  height: 700px;
+}
+.play .play-movie {
+  width: 100%;
+  height: 100%;
+}
+.play .play-movie video,
+.play .play-movie iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/*= Download ====================================================================*/
+.download {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.download-titla {
+  margin-bottom: 50px;
+  padding: 20px 0;
+  font-size: 33px;
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  border-bottom: 1px solid #878383;
+}
+.download table tbody tr td {
+  text-align: center;
+}
+.download table tbody tr td a {
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  color: red;
+  position: relative;
+}
+.download table tbody tr td a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 1px;
+  width: 0;
+  background-color: red;
+  transition: 1s;
+}
+.download table tbody tr td a:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .baner-movie {
+    display: none;
+  }
+  .play {
+    height: auto;
+  }
+  .play .play-movie {
+    width: 100%;
+    height: auto;
+  }
+}

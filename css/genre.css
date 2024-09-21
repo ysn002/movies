@@ -1,0 +1,10 @@
+@import "global_style.css";
+@import "style.css";
+
+#container {
+  min-height: calc(100vh - 150px);
+}
+#genre-select {
+  color: #fff;
+  border-color: #767676;
+}

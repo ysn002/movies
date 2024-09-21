@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--= Font Monoton==============================================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/movie-page.css">
+    <link rel="icon" type="image/x-icon" href="src/Images/fav-icon.png">
+    <title>Movies.TV</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-black">
+        <div class="container">
+          <a class="navbar-brand logo" href="index.html">Movies<span>.TV</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto me-5 mb-lg-0 links">
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="genre.html">genre</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">movies</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div id="container" class="container"></div>
+      
+
+    <footer>
+        <!-- footer-logo -->
+        <a href="#" class="logo">
+            Movies <span>.TV</span>
+        </a>
+        <span class="copyright">
+            Copyright 2023 - DD7_Yassine
+        </span>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script2.min.js"></script>
+    <script>
+          const navLinks = document.querySelectorAll(".navbar .container .nav-item .nav-link");
+          navLinks.forEach((link) => {
+            navLinks.forEach((item) => item.classList.remove("active"));
+          });
+          navLinks[2].classList.add("active");
+
+    </script>
+</body>
+</html>
